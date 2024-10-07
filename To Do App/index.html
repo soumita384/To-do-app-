@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Enter your task">
+        <input type="date" id="task-date">
+        <input type="number" id="task-hour" min="1" max="12" placeholder="Hour">
+        <input type="number" id="task-minute" min="0" max="59" placeholder="Minute">
+        <select id="task-am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <button id="add-btn">Add Task</button>
+        <button id="stop-alarm-btn">Stop Alarm</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
